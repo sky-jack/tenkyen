@@ -1,0 +1,107 @@
+
+
+/* ========================================================================== 
+* Import grid
+ ==========================================================================  */
+
+ @import "frag.less";
+
+ @import "pigeon.less";
+
+ html {
+ 	background: url(../images/whitebg.png)
+ }
+
+ body {
+ 	text-align: center;
+ 	font-size: 18px;
+	font-size: 1.8rem;
+	line-height: 22px;
+	line-height: 2.2rem;
+	font-family: 'Oswald', sans-serif;
+ }
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, caption, dt, th {
+	font-family: 'Oswald', sans-serif;
+}
+
+
+.main {
+	padding: 4rem 0;
+
+}
+
+.nav a:hover {
+	color: #333;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 85%;
+	height: 0px;
+	padding-bottom: 85%;
+	max-width: 700px;
+
+}
+
+.head {
+
+	min-height: 600px;
+  	background: url(../images/ttytile.svg);
+  	background-repeat: repeat-x;
+  	background-size: 26%;
+
+
+}
+.menu {
+	padding-bottom: 4rem;
+}
+
+.nav {
+	text-transform: uppercase;
+	padding-left: 10%;
+	
+}
+.nav li {
+	margin-right: 15.5%;
+	float: left;
+	display: inline-block;
+
+
+}
+.nav li:last-child {
+	margin-right: 0; 
+}
+.nav a {
+	text-decoration: none;
+	color: #300;
+	font-weight: bold;
+}
+
+@media all and (max-width: 1000px) {
+    .head {
+    	background-size: 35%;
+    	padding: 2rem 0;
+
+    }
+}
+// Mobile break-point
+@media all and (max-width: 640px) {
+	.main {
+		padding: 2rem 0;
+
+	}
+    .head {
+    	min-height: 350px;
+    	background-size: 34%;
+    }
+    .nav {
+    	padding-left: 0
+    }
+    .nav li {
+		margin-right: 3%;
+	}
+}
+
+
+
+

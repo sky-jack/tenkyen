@@ -1,0 +1,35 @@
+{
+  "locals": {
+    "url": "http://localhost:8080",
+    "name": "Ten Thousand Yen",
+    "owner": "Someone",
+    "description": "Ramblings of an immor(t)al demigod",
+    "navitems": [
+      { "name" : "Store", "url" : "http://tenthousandyen.bandcamp.com/"},
+      { "name" : "Codes", "url" : "https://soundcloud.com/tenthousandyen"},
+      { "name" : "Contact", "url" : "contact.html" },
+      { "name" : "News", "url" :  "blog.html" }
+
+    ]
+  },
+  "plugins": [
+    "./plugins/paginator.coffee",
+    "wintersmith-less",
+    "./plugins/wintersmith-handlebars.coffee"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "paginator": {
+    "perPage": 3
+  }
+}
