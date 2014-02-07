@@ -13,5 +13,29 @@
 	  			{{/each}}
 			</ul>
 		</nav>
-	<div>
+	</div>
+	<div class="space-above-more">
+	 	<!-- include author -->
+		{{#each articles}}
+			<article class="article intro">
+				<header class="header-top">
+					<p class="date">
+						<span> {{dateformat date format="MMMM YYYY"}} </span>
+						<h2>
+							{{title}}
+						</h2>	
+					</p>
+				</header>
+				<section class="content" > 
+					{{{intro}}}
+
+					 {{! show more if long post }}
+					{{#if hasMore}}
+						<p><a href="{{url}}">more</a></p>
+					{{/if}}
+
+				</section>
+			</article>
+		{{/each}}
+	</div>	
 </div>

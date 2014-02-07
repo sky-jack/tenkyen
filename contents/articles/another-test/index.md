@@ -1,8 +1,8 @@
 ---
-title: Code and stuff!
+title: Another post
 author: the-wintersmith
 date: 2012-10-01 15:00
-template: article.jade
+template: article.html
 ---
 
 Syntax highlighting with [highlight.js](http://softwaremaniacs.org/soft/highlight/en/).
