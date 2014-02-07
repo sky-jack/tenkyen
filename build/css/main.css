@@ -1621,12 +1621,10 @@ html {
   background: url(../images/whitebg.png);
 }
 body {
-  text-align: center;
   font-size: 18px;
   font-size: 1.8rem;
   line-height: 22px;
   line-height: 2.2rem;
-  font-family: 'Oswald', sans-serif;
 }
 h6,
 .h6,
@@ -1644,9 +1642,10 @@ caption,
 dt,
 th {
   font-family: 'Oswald', sans-serif;
+  text-align: center;
 }
 .main {
-  padding: 4rem 0;
+  padding: 5rem 0;
 }
 .nav a:hover {
   color: #333;
@@ -1656,14 +1655,15 @@ th {
   width: 85%;
   height: 0px;
   padding-bottom: 85%;
-  max-width: 700px;
+  max-width: 600px;
 }
 .head {
-  min-height: 600px;
+  min-height: 500px;
   background: url(../images/ttytile.svg);
   background-repeat: repeat-x;
-  background-size: 26%;
+  background-size: 25%;
 }
+/* nav styles */
 .menu {
   padding-bottom: 4rem;
 }
@@ -1672,7 +1672,7 @@ th {
   padding-left: 10%;
 }
 .nav li {
-  margin-right: 15.5%;
+  margin-right: 13%;
   float: left;
   display: inline-block;
 }
@@ -1683,6 +1683,19 @@ th {
   text-decoration: none;
   color: #300;
   font-weight: bold;
+}
+/* article styles */
+.header-top {
+  border-top: 1px dashed #d2d2d2;
+}
+p.date {
+  text-align: center;
+  margin: -1rem 0 1.5rem 0;
+}
+p.date span {
+  display: inline-block;
+  background-color: #f3f3f3;
+  padding: 0px 0.7em;
 }
 @media all and (max-width: 1000px) {
   .head {

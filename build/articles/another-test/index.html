@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Ten Thousand Yen</title>
+        <link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/css/main.css">
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+
+    <body id="home">
+    	<div class="wrapper">
+            
+
+<div class="main">
+	<article class="article">
+		<header class="header-top">
+			<p class="date">
+				<span>February 2014 </span>
+				<h1>
+					
+				</h1>
+				<div class="content">
+					
+				</div>	
+			</p>
+		<header>
+	</article>
+</div>
+
+<!--
+	block append vars
+		- bodyclass = 'article-detail'
+
+	block prepend title
+		| #{ page.title + " - "}
+
+	block header
+		include author
+		h1= page.title
+		p.author
+			| #{ "Written by " }
+			mixin author(page.metadata.author)
+
+	block content
+		article.article
+			section.content!= typogr(page.html).typogrify()
+
+	block prepend footer
+		div.nav
+			a(href=contents.index.url) « Full blog
+-->
+
+
+    	</div>
+    </body>
+</html>
